@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+  background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Remove | adiciona Page */
+.hide {
+  display: none;
+}
+
+/* Fontes */
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.page1 p, .page2 #btnReset {
+  font-family: "DM Sans", sans-serif;
+}
+
+.page2 p {
+  font-family: "Dancing Script";
+}
+
+/* page1 */
+
+.page1 {
+  width: 42.8rem;
+
+  border-radius: 0.5rem;
+  background: #FFF;
+  box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
+  
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  
+  text-align: center;
+}
+.page1 h1, p, .page2 h1{
+  color: #34355B;
+
+}
+
+.page1 h1 {
+  margin-bottom: 1.4rem;
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.page1 p {
+  margin-bottom: 2.0rem;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.page1 #imgBtn {
+  cursor: pointer;
+}
+
+.page1 #imgBtn:hover{
+  animation: rotaion 0.3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotaion {
+  0% {transform: rotate(3deg);}
+  25% {transform: rotate(-3deg)}
+  50% {transform: rotate(0deg)}
+  75% {transform: rotate(3deg)}
+  100% {transform: rotate(-3deg)}
+}
+
+
+/* page2 */
+.page2 {
+  border-radius: 0.5rem;
+  background: #FFF;
+  box-shadow: 0 2.0rem 5.0rem 0 rgba(0, 0, 0, 0.80);
+
+  padding: 4.8rem 6.4rem;
+
+  text-align: center;
+
+  width: 42.8rem;
+}
+
+.page2 h1{
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 1.7rem;
+}
+
+.page2 p {
+  padding: 1.0rem;
+
+  background: #E4EDF1;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.0rem rgba(85, 85, 85, 0.50);
+
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 1.7rem;
+
+  animation: transaction 2s forwards;
+}
+
+@keyframes transaction {
+  0% {
+    transform: translatey(100%)scale(0);
+    opacity: 0;
+    
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    transform: translatey(0)scale(1);
+    opacity: 1;
+  }
+}
+
+.page2 #btnReset {
+  margin-top: 1.7rem;
+
+  border-radius: 0.4rem;
+  border: none;
+  background: #FF9500;
+
+  margin-left: 6.3rem;
+  margin-right: 6.3rem;
+
+  padding: 1.6rem;
+
+  color: #FFF;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  cursor: pointer;
+
+  transition: background .3s;
+}
+
+.page2 #btnReset:hover {
+  background: #f08e04;
+}
+
